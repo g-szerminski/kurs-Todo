@@ -1,35 +1,19 @@
-var user = {
-	title: 'Kurs-Todo Gordon',
-	name: 'Grześ',
-	age: '37',
-	location: 'Wrocław',
-	options: ['one', 'two']
-};
+var todos = ['item 1', 'item 2', 'item 3'];
 
-function getLocation (location) {
-	if (location) {
-		return 'location: ' + location;
-	} 
-};
+function displayTodos() {
+	console.log('My todos: ', todos);
+}
+displayTodos();
 
-function getAge (age) {
-	if (age >= 18) {
-		return 'age: ' + age;
-	} else {
-		return 'You are under 18';
-	} 
-};
+function addTodo(todo) {
+	todos.push(todo);
+	displayTodos();
+	document.write('My todos: ', todos);
+}
+addTodo();
+addTodo();
+addTodo('my oh my');
 
-
-const templateTwo = React.createElement ('div', {},
-	React.createElement ('h1', {}, user.title),
-	React.createElement ('h3', {}, user.name ? user.name.toUpperCase() : 'Anonymus'),
-	React.createElement ('p', {}, user.age ? getAge(user.age) : 'please enter your age'),
-	React.createElement ('p', {}, getLocation(user.location)),
-	React.createElement ('p', {}, user.options.length > 0 ? 'Here are some options' : 'No options'),
-	123
-);
-
-const appRoot = document.getElementById('app');
-ReactDOM.render(templateTwo, appRoot);
-//ReactDOM.render(template, appRoot);
+function changeTodo() {
+	todos[0] = 'some new value';
+}
