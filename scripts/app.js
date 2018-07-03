@@ -14,6 +14,10 @@ addTodo();
 addTodo();
 addTodo('my oh my');
 
-function changeTodo() {
-	todos[0] = 'some new value';
+function changeTodo(position, newValue) {
+	todos[position] = newValue;
+	displayTodos();
 }
+
+changeTodo(0, 'changed');
+changeTodo(0, 'changed again');
