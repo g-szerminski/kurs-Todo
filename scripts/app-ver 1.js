@@ -18,14 +18,20 @@ function changeTodo(position, newValue) {
 	todos[position] = newValue;
 	displayTodos();
 }
+//changeTodo(0, 'changed');
+//changeTodo(0, 'changed again');
 
 function deleteTodo(position) {
 	todos.splice(position, 1);
 	displayTodos();
 }
-//changeTodo(0, 'changed');
-//changeTodo(0, 'changed again');
 //deleteTodo(4);
+
+function makeSandwich(filling) {
+	console.log('you added:',filling);
+	document.write('you added: ',filling);
+}
+makeSandwich('ham');
 
 {
 	name: 'Gordon'
