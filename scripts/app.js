@@ -34,8 +34,31 @@ var todoList = {
         var todo = this.todos[position];
         todo.complited = !todo.complited;
         this.displayTodos();
+    },
+    toggleAll: function() {
+        var totalTodos = this.todos.length;
+        var complitedTodos = 0;
+
+            // Get a number of complited todos
+        for (var i = 0; i < totalTodos; i++) {
+            if (this.todos[i].complited === true) {
+                complitedTodos++;
+            }
+        }
+            // Case 1: If everything is true, make everything false
+        if (totalTodos === complitedTodos) {
+            for (var i = 0; i < totalTodos; i++) {
+                this.todos[i].complited = false;
+            }
+            // Case 2: Otherwise, make everything true
+        } else {
+            for (var i = 0; i < totalTodos; i++) {
+                    this.todos[i].complited = true;   
+            }
+        }
+            this.displayTodos();
     }
-}
+};
 
  // changeTodo: function(position, newValue) {
     //  this.todos[position] = newValue;
