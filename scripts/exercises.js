@@ -31,3 +31,10 @@ tab[2] = ['Agnieszka' , '170'];
 console.log('imię: ' + tab[0][0] + ', wzrost: ' + tab[0][1]);
 console.log('imię: ' + tab[1][0] + ', wzrost: ' + tab[1][1]);
 console.log('imię: ' + tab[2][0] + ', wzrost: ' + tab[2][1]);
+
+//zad.4
+console.log('start programu');
+setTimeout(function(){
+    console.log('hello ');
+}, 2000);
+console.log('world');
