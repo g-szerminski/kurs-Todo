@@ -38,3 +38,10 @@ setTimeout(function(){
     console.log('hello ');
 }, 2000);
 console.log('world');
+
+console.log(global);
+
+// how the computer is reading code (just type myHouse and color in a console)
+var myHouse = {color: 'blue'};
+var color = myHouse.color;
+color = 'red';
