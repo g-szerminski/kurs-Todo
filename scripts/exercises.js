@@ -51,9 +51,16 @@ color = 'red';
 
 
 //zad.6
-//video nr. 9
+//video no. 9
 var myHouse1 = {color: 'blue'};
 var myHouse2 = myHouse1;
 myHouse2.color = 'red';
-
 // var myHouse1 is going to be red
+
+//zad. 10
+//video no. 10
+var myHouse1 = {color: 'blue'};
+var myHouse2 = {color: 'blue'};
+myHouse2.color = 'red';
+// myHouse1 is going to be blue
+// myHoude2 is going to be red
