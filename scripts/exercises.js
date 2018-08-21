@@ -41,7 +41,19 @@ console.log('world');
 
 console.log(global);
 
+//zad.5 (todo-kurs version-6 'Inerlude - Data types and comparisons')
 // how the computer is reading code (just type myHouse and color in a console)
+// video no. 8
 var myHouse = {color: 'blue'};
 var color = myHouse.color;
 color = 'red';
+// var myHouse is going to be still blue
+
+
+//zad.6
+//video nr. 9
+var myHouse1 = {color: 'blue'};
+var myHouse2 = myHouse1;
+myHouse2.color = 'red';
+
+// var myHouse1 is going to be red
