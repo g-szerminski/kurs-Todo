@@ -64,15 +64,31 @@ var todoList = {
     //  this.todos[position] = newValue;
     //  this.displayTodos();
     // },
+//------------------------------------------------------------------------------------------
 
-// 1. We want to get acces to display Todos button
-var displayTodosButton = document.getElementById('displayTodosButton');
-var toggleAllButton = document.getElementById('toggleAllButton');
+// // 1. We want to get acces to display Todos button
+// var displayTodosButton = document.getElementById('displayTodosButton');
+// var toggleAllButton = document.getElementById('toggleAllButton');
 
-// 2. We want to run displayTodos method , when someone cliks the displayTodos button
-displayTodosButton.addEventListener('click', function() {
-    todoList.displayTodos();
-});
-toggleAllButton.addEventListener('click', function() {
-    todoList.toggleAll();
-});
+// // 2. We want to run displayTodos method , when someone cliks the displayTodos button
+// displayTodosButton.addEventListener('click', function() {
+//     todoList.displayTodos();
+// });
+// toggleAllButton.addEventListener('click', function() {
+//     todoList.toggleAll();
+// });
+//------------------------------------------------------------------------------------------
+
+var handlers = {
+    displayTodos: function() {
+        todoList.displayTodos();
+    },
+    toggleAll: function() {
+        todoList.toggleAll();
+    },
+    addTodo: function() {
+        var addTodoTextInput = document.getElementById('addTodoTextInput');
+        todoList.addTodo(addTodoTextInput.value);
+        addTodoTextInput.value = '';
+    }
+}

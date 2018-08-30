@@ -16,15 +16,25 @@ body {
     /*direction: rtl;*/
 }
 
-h1 {
+button {
+    width: 100px;
+    height: 20px;
+    margin: 10px;
+}
+
+input {
+    height: 20px;
+}
+
+/*h1 {
 	margin-left: 20px;
 }
 
 p, h3 {
 	margin: 20px;
 }
-
-a {
+*/
+/*a {
     display: inline-block;
     margin-top: 1500px;
-}
+}*/
