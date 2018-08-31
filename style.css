@@ -25,7 +25,11 @@ button {
 input {
     height: 20px;
 }
+ #changeTodoPositionInput, #deleteTodoPositionInput {
+    width: 50px;
+ }
 
+ 
 /*h1 {
 	margin-left: 20px;
 }
