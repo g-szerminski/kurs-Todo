@@ -27,18 +27,4 @@ input {
 }
  #changeTodoPositionInput, #deleteTodoPositionInput, #toggleComplitedPositionInput {
     width: 50px;
- }
-
- 
-/*h1 {
-	margin-left: 20px;
 }
-
-p, h3 {
-	margin: 20px;
-}
-*/
-/*a {
-    display: inline-block;
-    margin-top: 1500px;
-}*/

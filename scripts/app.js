@@ -91,6 +91,12 @@ var handlers = {
     }
 }
 
+//var todosUl = document.getElementByTagName('ul');
+var todoLi = document.createElement('li');
+var todosUl = document.querySelector('ul');
+//todosUl.appendChild(todoLi);
+
+
  // changeTodo: function(position, newValue) {
     //  this.todos[position] = newValue;
     //  this.displayTodos();
