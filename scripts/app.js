@@ -94,3 +94,14 @@ const view = {
         }
     }
 };
+
+// function runWithDebugger(ourFunction) {
+//     debugger;
+//     ourFunction();
+// }
+
+// runWithDebugger(function tenNumbers () {
+//     for (var i = 1; i <= 10; i++) {
+//         console.log(i);
+//     }   
+// });
