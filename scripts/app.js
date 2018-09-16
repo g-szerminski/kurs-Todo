@@ -89,6 +89,7 @@ const view = {
             todoTextWithCompletion = '( )  ' + todo.todoText;
             }
 
+            todoLi.id = i;
             todoLi.textContent = todoTextWithCompletion;
             todoLi.appendChild(this.createDeleteButton());
             todosUl.appendChild(todoLi);
@@ -101,6 +102,12 @@ const view = {
         return deleteButton;
     }
 };
+
+var todosUl = document.querySelector('ul');
+todosUl.addEventListener('click', function(event) {
+    console.log(event.target.parentNode.id);
+});
+
 
 // function runWithDebugger(ourFunction) {
 //     debugger;
