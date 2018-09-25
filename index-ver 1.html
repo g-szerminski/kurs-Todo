@@ -8,7 +8,16 @@
 	<body>
 		<div id='app'></div>
 		<h1>Todo List</h1>
+
+		<!-- -------------------------------------------------------- -->
+		<!-- Old version of the buttons. -->
+		<!-- <button id="displayTodosButton">Display Todos</button>
+		<button id='toggleAllButton'>Toggle All</button> -->
+		<!-- --------------------------------------------------------- -->
+		<!-- <a href="#app">fsf</a> -->
 		<div>
+			<!-- <button onclick="handlers.displayTodos()">Display Todos</button> --> 		<!-- It's not needed anymore after add view.displayTodos() to every method in js file. -->
+			
  			<button onclick="handlers.toggleAll()">Toggle All</button>
 		</div>
 		<div>
@@ -20,14 +29,20 @@
 			<input id="changeTodoPositionInput" type="number">
 			<input id="changeTodoTextInput" type="text">
 		</div>
+<!--
+		<div>
+			<button onclick="handlers.deleteTodo()">Delete</button>
+			<input id="deleteTodoPositionInput" type="number">
+		</div>
+-->
 		<div>
 			<button onclick="handlers.toggleComplited()">Toggle Complited</button>
 			<input id="toggleComplitedPositionInput" type="number">
 		</div>
-		
+
 		<ul>		
 		</ul>
-		
+
 		<script type="text/javascript" src="/scripts/app.js"></script>
 		<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
 		<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
