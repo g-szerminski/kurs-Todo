@@ -19,6 +19,13 @@ var todoList = {
     toggleAll: function() {
         var totalTodos = this.todos.length;
         var complitedTodos = 0;
+
+            // Get a number of complited todos
+//        for (var i = 0; i < totalTodos; i++) {
+//            if (this.todos[i].complited === true) {
+//                complitedTodos++;
+//            }
+//        }
       
         this.todos.forEach(function(todo) {
           if (todo.complited === true) {
@@ -27,11 +34,18 @@ var todoList = {
         });
             // Case 1: If everything is true, make everything false
         if (complitedTodos === totalTodos) {
+//            for (var i = 0; i < totalTodos; i++) {
+//                this.todos[i].complited = false;
+//            }
             this.todos.forEach(function(todo) {
               todo.complited = false;
-            });  
+            });
+          
             // Case 2: Otherwise, make everything true
         } else {
+//            for (var i = 0; i < totalTodos; i++) {
+//                    this.todos[i].complited = true;   
+//            }
           this.todos.forEach(function(todo) {
               todo.complited = true;
           });
