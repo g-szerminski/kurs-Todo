@@ -98,15 +98,18 @@ const view = {
         deleteButton.textContent = 'Delete';
         deleteButton.className = 'deleteButton';
         return deleteButton;
+    },
+    setUpEventListeners: function() {
+        var todosUl = document.querySelector('ul');
+        todosUl.addEventListener('click', function(event) {
+          // Get elemnt that was clicked on.
+          var elementClicked = event.target;
+          // Check if elementClicked is a delete button.
+          if (elementClicked.className === 'deleteButton') {
+            handlers.deleteTodo(parseInt(elementClicked.parentNode.id));
+          }
+        });
     }
 };
+view.setUpEventListeners();
 
-var todosUl = document.querySelector('ul');
-todosUl.addEventListener('click', function(event) {
-    // Get elemnt that was clicked on.
-    var elementClicked = event.target;
-    // Check if elementClicked is a delete button.
-    if (elementClicked.className === 'deleteButton') {
-        handlers.deleteTodo(parseInt(elementClicked.parentNode.id));
-    }
-});
