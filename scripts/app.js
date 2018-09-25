@@ -19,7 +19,7 @@ var todoList = {
     toggleAll: function() {
         var totalTodos = this.todos.length;
         var completedTodos = 0;
-          // Get number of completed todos.=====================================
+          // Get number of completed todos.
         this.todos.forEach(function(todo) {
           if (todo.completed === true) {
             completedTodos++;
